@@ -1,0 +1,25 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Use space for indentation.
+[*]
+indent_style = space
+
+[*.sln]
+indent_style = tab
+
+# C/C++/C# Code Files
+[*.{c, cpp, cxx, c++, cc, cs, h, hpp, h++, hh}]
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace=true
+
+# Visual Studio Project Files (XML)
+[*.{csproj,vcxproj,vcxproj.filters,props}]
+indent_size = 2
+
+# Powershell Scripts
+[*.ps1]
+indent_size = 2
