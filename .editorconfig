@@ -7,11 +7,8 @@ root = true
 [*]
 indent_style = space
 
-[*.sln]
-indent_style = tab
-
 # C/C++/C# Code Files
-[*.{c, cpp, cxx, c++, cc, cs, h, hpp, h++, hh}]
+[*.{c,cpp,cxx,c++,cc,cs,h,hpp,h++,hh}]
 indent_size = 4
 insert_final_newline = true
 trim_trailing_whitespace=true
@@ -20,6 +17,13 @@ trim_trailing_whitespace=true
 [*.{csproj,vcxproj,vcxproj.filters,props}]
 indent_size = 2
 
+[*.sln]
+indent_style = tab
+
 # Powershell Scripts
 [*.ps1]
 indent_size = 2
+
+# Markdown
+[*.{md,markdown}]
+trim_trailing_whitespace = false

@@ -1,5 +1,5 @@
 # Set the default behavior.
-*           text=auto
+*               text=auto
 
 #Visual Studio Project Files
 *.sln           text eol=crlf
