@@ -16,9 +16,7 @@
 
 #pragma once
 
-#include "StdAfx.h"
-
-//https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+// https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 const std::unordered_map<std::wstring, WORD> keyTable({
     { L"VK_LBUTTON", VK_LBUTTON },
     { L"VK_RBUTTON", VK_RBUTTON },

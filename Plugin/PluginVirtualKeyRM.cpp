@@ -14,6 +14,7 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+#include "StdAfx.h"
 #include "PluginVirtualKeyRM.h"
 
 // Note: GetString, ExecuteBang and an unnamed function for use as a section variable
