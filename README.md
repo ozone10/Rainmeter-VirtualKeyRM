@@ -6,4 +6,24 @@
 [![Total downloads](https://img.shields.io/github/downloads/ozone10/Rainmeter-VirtualKeyRM/total.svg)](https://github.com/ozone10/Rainmeter-VirtualKeyRM/releases)
 [![Licence](https://img.shields.io/github/license/ozone10/Rainmeter-VirtualKeyRM?color=9cf)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-Rainmeter plugin that allows to use virtual keys.
+Rainmeter plugin that allows to use virtual keys.  
+Use it as bang [!CommandMeasure VirtualKey "Constant"].  
+Get constant from here https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes  
+For number or letter use "VK_N" where N is symbol you want to use. Example for A is VK_A, for 5 it is VK_5, ...
+
+-   **Example:**
+
+```ini
+[VirtualKey]
+Measure=Plugin
+Plugin=VirtualKeyRM
+AltKey=0
+CtrlKey=0
+ShiftKey=1
+StartKey=1
+
+[SomeMeter]
+Meter=String
+Text=Snippet Shortcut (Window+Shift+S)
+LeftMouseUpAction=[!CommandMeasure VirtualKey "VK_S"]
+```
